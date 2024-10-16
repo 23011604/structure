@@ -1,0 +1,31 @@
+import java.util.Stack;
+
+public class JavaApplication3 {
+
+    public static void main(String[] args) {
+        // Create a stack
+        Stack<String> stack = new Stack<>();
+
+        // Push elements onto the stack
+        stack.push("Element 1");
+        stack.push("Element 2");
+        stack.push("Element 3");
+
+        // Display the stack
+        System.out.println("Stack: " + stack);
+
+        // Pop an element from the stack
+        String poppedElement = stack.pop();
+        System.out.println("Popped Element: " + poppedElement);
+
+        // Display the stack after popping
+        System.out.println("Stack after pop: " + stack);
+
+        // Peek at the top element without removing it
+        String topElement = stack.peek();
+        System.out.println("Top Element: " + topElement);
+
+        // Display the stack after peeking
+        System.out.println("Stack after peek: " + stack);
+    }
+}
